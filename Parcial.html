@@ -1,0 +1,122 @@
+<canvas id="canvas" width="1000px" height="1000px"/>
+<script>
+function draw() {
+   
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext){
+    var ctx = canvas.getContext('2d');
+
+
+    //PARTES DEL OCTAEDRO
+    ctx.fillStyle = '#E69DFB';
+    ctx.beginPath();
+    ctx.moveTo(60,50);
+    ctx.lineTo(85,7);
+    ctx.lineTo(100,50);
+    ctx.closePath();
+    ctx.translate(38,1)
+    ctx.fill();
+
+    ctx.fillStyle = '#8C4966';
+    ctx.beginPath();
+    ctx.moveTo(60,50);
+    ctx.lineTo(85,75);
+    ctx.lineTo(100,50);
+    ctx.closePath();
+    ctx.translate(40,1)
+    ctx.fill();
+
+    ctx.fillStyle = '#F69';
+    ctx.translate(38,1)
+    ctx.beginPath();
+    ctx.moveTo(60,50);
+    ctx.lineTo(48,7);
+    ctx.lineTo(80,40);
+    ctx.closePath();
+    ctx.translate(41,1)
+    ctx.fill();
+
+    ctx.fillStyle = '#000000';
+    ctx.beginPath();
+    ctx.moveTo(60,50);
+    ctx.lineTo(48,73);
+    ctx.lineTo(80,40);
+    ctx.closePath();
+    ctx.translate(42,1)
+    ctx.fill();
+
+    // OCTAEDRO FORMADO
+
+    ctx.fillStyle = '#E69DFB';
+    ctx.beginPath();
+    ctx.moveTo(60,50);
+    ctx.lineTo(85,7);
+    ctx.lineTo(100,50);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.fillStyle = '#8C4966';
+    ctx.beginPath();
+    ctx.moveTo(60,50);
+    ctx.lineTo(85,75);
+    ctx.lineTo(100,50);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.fillStyle = '#F69';
+    ctx.translate(38,1)
+    ctx.beginPath();
+    ctx.moveTo(60,50);
+    ctx.lineTo(48,7);
+    ctx.lineTo(80,40);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.fillStyle = '#000000';
+    ctx.beginPath();
+    ctx.moveTo(60,50);
+    ctx.lineTo(48,73);
+    ctx.lineTo(80,40);
+    ctx.closePath();
+    ctx.fill();
+
+    //OCTAEDRO ESCALADO
+    ctx.scale(4, 4);
+
+    ctx.fillStyle = '#E69DFB';
+    ctx.beginPath();
+    ctx.moveTo(60,50);
+    ctx.lineTo(85,7);
+    ctx.lineTo(100,50);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.fillStyle = '#8C4966';
+    ctx.beginPath();
+    ctx.moveTo(60,50);
+    ctx.lineTo(85,75);
+    ctx.lineTo(100,50);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.fillStyle = '#F59';
+    ctx.translate(38,1)
+    ctx.beginPath();
+    ctx.moveTo(60,50);
+    ctx.lineTo(47,7);
+    ctx.lineTo(80,40);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.fillStyle = '#000000';
+    ctx.beginPath();
+    ctx.moveTo(60,50);
+    ctx.lineTo(47,74);
+    ctx.lineTo(80,40);
+    ctx.closePath();
+    ctx.fill();
+
+  }
+}
+draw();
+</script>
